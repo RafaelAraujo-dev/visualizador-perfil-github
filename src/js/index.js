@@ -23,3 +23,10 @@ btnSearch.addEventListener('click', async () => {
         profileResults.innerHTML = "";
     }
 });
+
+inputSearch.addEventListener('keyup', (e) => {
+    const key = e.which || e.keyCode;
+    if (key === 13) {
+        btnSearch.click();
+    }
+});
